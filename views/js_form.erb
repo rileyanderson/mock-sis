@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form Submit</title>
+</head>
+<body>
+  <form action="vamobile://login-success" method="get" id="oauth-form">
+    <input type="hidden" name="code" value="523513fdvq34gberfq243g" />
+    <input type="hidden" name="type" value="logingov" />
+    <noscript>
+      <div>
+        <input type="submit" value="Continue"/>
+      </div>
+    </noscript>
+  </form>
+
+  <script nonce="CSP_NONCE" >
+    (function() {
+      document.getElementById("oauth-form").submit();
+    })();
+  </script>
+</body>
+</html>
